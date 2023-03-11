@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
+import Services from '../components/Card';
 
 const Home: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
           <Nav />
           <Hero />
         </div>
+        <Services />
       </main>
     </>
   );

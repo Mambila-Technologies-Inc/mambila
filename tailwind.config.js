@@ -25,7 +25,15 @@ module.exports = {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    fontFamily: {
+      Mulish: ['Mulish', 'sans-serif'],
+      Montserrat: ['Montserrat', 'sans-serif'],
+    },
+    extend: {
+      colors: {
+        lightGray: '#D1C1A7',
+      },
+    },
   },
   plugins: [require('daisyui')],
 };

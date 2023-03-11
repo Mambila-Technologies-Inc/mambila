@@ -16,12 +16,24 @@ const Nav: NextPage = () => {
           />
         </div>
         <div className="flex space-x-6">
-          <Link href="/">Products</Link>
-          <Link href="/">Solutions</Link>
-          <Link href="/">News</Link>
-          <Link href="/">Investor relations</Link>
-          <Link href="/">Careers</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            Products
+          </Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            Solutions
+          </Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            News
+          </Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            Investor relations
+          </Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            Careers
+          </Link>
+          <Link href="/" className="font-Mulish font-bold text-md">
+            Contact
+          </Link>
         </div>
       </nav>
     </>

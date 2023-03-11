@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Nav from '../components/Nav';
+import Hero from '../components/Hero';
 
 const Home: NextPage = () => {
   return (
@@ -10,8 +12,11 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-[green]">
-        <h1 className="text-3xl font-bold">Hello world!</h1>
+      <main className="">
+        <div className="container mx-auto relative">
+          <Nav />
+          <Hero />
+        </div>
       </main>
     </>
   );

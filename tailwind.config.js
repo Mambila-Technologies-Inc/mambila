@@ -31,7 +31,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        lightGray: '#D1C1A7',
+        lightGray: '#ddd',
       },
     },
   },

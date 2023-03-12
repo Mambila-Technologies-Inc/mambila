@@ -31,6 +31,7 @@ const Hero: NextPage = () => {
               <Image
                 src="/images/img1.png"
                 alt="Landscape picture"
+                className="w-full h-[500px]"
                 width={470}
                 height={100}
               />
@@ -41,7 +42,7 @@ const Hero: NextPage = () => {
         </section>
         <section>
           <div className="flex  justify-between flex-col-reverse md:flex-row-reverse items-center px-6 mx-auto space-y-0 md:space-y-0">
-            <div className="flex text-center flex-col  space-y-5 md:w-1/2">
+            <div className="flex text-center flex-col space-y-5 md:w-1/2">
               <h1 className="max-w-md text-3xl font-[800] font-Mulish text-center md:text-2xl md:text-left">
                 Our mission is to create technologies that solve major problems
                 and accelerate the world’s transition to a sustainable tech
@@ -57,6 +58,7 @@ const Hero: NextPage = () => {
               <Image
                 src="/images/img2.png"
                 alt="Landscape picture"
+                className="w-full h-[450px]"
                 width={470}
                 height={100}
               />

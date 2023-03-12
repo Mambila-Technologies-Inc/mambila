@@ -1,34 +1,131 @@
 import { NextPage } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Services: NextPage = () => {
   return (
     <>
       <div className="relative bg-lightGray">
-        <div className="container mx-auto py-20">
-          <div className="flex items-center justify-between">
+        <div className="container mx-auto pb-20">
+          <div className="flex items-center justify-between py-20">
             <div className="max-w-sm w-1/2">
-              <h1 className="max-w-xl text-4xl font-[800] text-center font-Mulish md:text-5xl md:text-left">
+              <h1 className="max-w-xl text-5xl font-[800] text-center font-Mulish md:text-5xl md:text-left">
                 The industries we service.
               </h1>
             </div>
             <div>
-              <button className="rounded-[10px] text-white  font-Mulish bg-[blue] py-2 px-5">
+              <button className="rounded-[10px] text-white mr-20 font-Mulish bg-[blue] py-2 px-5">
                 View all industries
               </button>
             </div>
           </div>
-          <div className="flex flex-wrap gap-10 justify-items-start">
-            <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="flex flex-wrap gap-8 justify-items-start">
+            <div className="card w-1/4 lg:w-96 bg-base-100 shadow-xl">
               <div className="card-body">
-                <h2 className="card-title">Shoes!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <h2 className="card-title font-Mulish font-[800] text-4xl">
+                  Finance
+                </h2>
+                <p className="text-[16px] space-y-5 font-Montserrat">
+                  We are creating practical solutions to address everyday health
+                  issues that people face, such as fitness trackers, tools to
+                  promote a healthy lifestyle, and better early disease
+                  diagnosis.
+                </p>
+                <Link
+                  href="/"
+                  className="flex items-center gap-1 text-[blue] font-Mulish font-bold text-[20px]"
+                >
+                  Learn more <FiArrowRight />
+                </Link>
               </div>
               <div className="">
                 <Image
-                  src="/images/img2.png"
+                  src="/images/img3.png"
                   alt="Shoes"
+                  className="w-full h-[150px]"
+                  width={200}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="card w-1/4 lg:w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title font-Mulish font-[800] text-4xl">
+                  Energy
+                </h2>
+                <p className="text-[16px] space-y-5 font-Montserrat">
+                  Through MT Renewable Energy, we are developing clean energy
+                  resources to meet industrial, commercial, and domestic needs
+                  in underserved areas of emerging communities.
+                </p>
+                <Link
+                  href="/"
+                  className="flex items-center gap-1 text-[blue] font-Mulish font-bold text-[20px]"
+                >
+                  Learn more <FiArrowRight />
+                </Link>
+              </div>
+              <div className="">
+                <Image
+                  src="/images/img4.png"
+                  alt="Shoes"
+                  className="w-full h-[150px]"
+                  width={200}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="card w-1/4 lg:w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title font-Mulish font-[800] text-4xl">
+                  Healthcare
+                </h2>
+                <p className="text-[16px] space-y-5 font-Montserrat">
+                  We are creating practical solutions to address everyday health
+                  issues that people face, such as fitness trackers, tools to
+                  promote a healthy lifestyle, and better early disease
+                  diagnosis.
+                </p>
+                <Link
+                  href="/"
+                  className="flex items-center gap-1 text-[blue] font-Mulish font-bold text-[20px]"
+                >
+                  Learn more <FiArrowRight />
+                </Link>
+              </div>
+              <div className="">
+                <Image
+                  src="/images/img5.png"
+                  alt="Shoes"
+                  className="w-full h-[150px]"
+                  width={200}
+                  height={100}
+                />
+              </div>
+            </div>
+            <div className="card w-1/4 lg:w-96 bg-base-100 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title font-Mulish font-[800] text-4xl">
+                  Agriculture
+                </h2>
+                <p className="text-[16px] space-y-5 font-Montserrat">
+                  Mambila Technologies is Africa’s leading Integrated Payments
+                  and Digital Commerce Solutions company,
+                </p>
+                <Link
+                  href="/"
+                  className="flex items-center gap-1 text-[blue] font-Mulish font-bold text-[20px]"
+                >
+                  Learn more <FiArrowRight />
+                </Link>
+              </div>
+              <div className="">
+                <Image
+                  src="/images/img6.png"
+                  alt="Shoes"
+                  className="w-full h-[150px]"
                   width={200}
                   height={100}
                 />

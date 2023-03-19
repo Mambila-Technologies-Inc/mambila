@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import Services from '../components/Card';
 import Navbar from '../components/Navbar';
+import Resources from '../components/Resources';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
           <Hero />
         </div>
         <Services />
+        <Resources/>
       </main>
     </>
   );

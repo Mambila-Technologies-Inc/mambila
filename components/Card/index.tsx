@@ -7,7 +7,20 @@ import { FiArrowRight } from 'react-icons/fi';
 const Services: NextPage = () => {
   return (
     <>
-      <div className="relative bg-lightGray">
+      <div className='bg-[#D8D8D8] p-[50px_20px] mt-[60px]'>
+        <div className='flex items-center justify-between'>
+          <p className='font-[800] text-[48px] text-[#000000] leading-[43px] font-Mulish'>The industries <br /> we service.</p>
+          <button>View all industries</button>
+        </div>
+        <div className='grid lg:grid-cols-3 mt-[20px] gap-[40px]'>
+          {
+            services.map(({id, title, content})=> (
+              <div key={id} className='shadow rounded-[20px] p-[20px] text-[#000000]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, soluta fuga. Ullam doloremque, minus maiores, doloribus accusamus vitae esse harum tempore libero, corrupti expedita recusandae dolor molestiae in repellat fuga?</div>
+            ))
+          }
+        </div>
+      </div>
+      {/* <div className="relative bg-lightGray">
         <div className="container mx-auto pb-20">
           <div className="flex items-center justify-between py-20">
             <div className="max-w-sm w-1/2">
@@ -133,9 +146,34 @@ const Services: NextPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
 
 export default Services;
+
+
+const services = [
+  {
+    id: 1,
+    title: 'Agriculture',
+    content: "Mambila Technologies is one of Africa's leading provider of integrated payment and digital commerce solutions. We use expertise, cutting-edge innovations, and technologies to provide exceptional financial solutions."
+  },
+  {
+    id: 2,
+    title: 'Finance',
+    content: "Mambila Technologies is one of Africa's leading provider of integrated payment and digital commerce solutions. We use expertise, cutting-edge innovations, and technologies to provide exceptional financial solutions."
+  },
+  {
+    id: 3,
+    title: 'Energy',
+    content: "Mambila Technologies is one of Africa's leading provider of integrated payment and digital commerce solutions. We use expertise, cutting-edge innovations, and technologies to provide exceptional financial solutions."
+  },
+  {
+    id: 4,
+    title: 'Healthcare',
+    content: "Mambila Technologies is one of Africa's leading provider of integrated payment and digital commerce solutions. We use expertise, cutting-edge innovations, and technologies to provide exceptional financial solutions."
+  },
+  
+]

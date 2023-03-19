@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 import Services from '../components/Card';
+import Navbar from '../components/Navbar';
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +14,9 @@ const Home: NextPage = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="">
-        <div className="container mx-auto relative">
-          <Nav />
+      <main className="container mx-auto">
+        <div className="">
+          <Navbar />
           <Hero />
         </div>
         <Services />

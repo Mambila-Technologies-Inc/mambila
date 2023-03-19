@@ -10,7 +10,7 @@ const Services: NextPage = () => {
       <div className='bg-[#D8D8D8] p-[50px_20px] mt-[60px]'>
         <div className='flex items-center justify-between'>
           <p className='font-[800] text-[48px] text-[#000000] leading-[43px] font-Mulish'>The industries <br /> we service.</p>
-          <button>View all industries</button>
+          <button>View all industriess</button>
         </div>
         <div className='grid lg:grid-cols-2 mt-[40px] gap-[40px]'>
           {
@@ -19,7 +19,7 @@ const Services: NextPage = () => {
               <div className='p-[20px]'>
               <p className='text-[#000000] font-[700] font-Mulish text-[28px]'>{title}</p>
               <p className='mt-[13px] font-Montserrat text-[16px] font-[400] text-[#000000]'>{content}</p>
-              <Link href='/' className='text-[#0500FC] font-[800] text-[18px] font-Mulish flex items-center'>
+              <Link href='/' className='text-[#0500FC] font-[800] text-[18px] font-Mulish flex items-center space-x-[5px]'>
                 <p>Learn More</p>
               <BsArrowRight/>
               </Link>

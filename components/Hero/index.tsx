@@ -1,6 +1,8 @@
 import { NextPage } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { BsArrowRight } from 'react-icons/bs';
 
 const Hero: NextPage = () => {
   return (
@@ -54,6 +56,10 @@ const Hero: NextPage = () => {
             Our mission is to create technologies that solve major problems and accelerate the world’s transition to a sustainable tech system.
             </p>
             <p className='w-full lg:w-[558px] font-[400] text-[16px] mt-[21px] text-[#2D2D2D] font-Montserrat'>We are keen on identifying  prolonged problems existing in emerging communities and providing corresponding solutions that would solve those problems for everyone. </p>
+            <Link href='/' className='text-[#0500FC] font-[800] text-[18px] font-Mulish flex items-center space-x-[10px] mt-[20px]'>
+                <p>Learn More</p>
+              <BsArrowRight/>
+              </Link>
           </div>
          
         </div>
@@ -91,6 +97,10 @@ const Hero: NextPage = () => {
             Our mission is to create technologies that solve major problems and accelerate the world’s transition to a sustainable tech system.
             </p>
             <p className='w-full  font-[400] text-[14px] mt-[21px] text-[#2D2D2D] font-Montserrat'>We are keen on identifying  prolonged problems existing in emerging communities and providing corresponding solutions that would solve those problems for everyone. </p>
+            <Link href='/' className='text-[#0500FC] font-[800] text-[18px] font-Mulish flex items-center space-x-[5px]'>
+                <p>Learn More</p>
+              <BsArrowRight/>
+              </Link>
           </div>
           <div className="relative w-full h-[202px] mt-[40px]  rounded-[10px]">
               <Image

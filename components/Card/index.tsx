@@ -15,7 +15,7 @@ const Services: NextPage = () => {
         <div className='grid lg:grid-cols-3 mt-[20px] gap-[40px]'>
           {
             services.map(({id, title, content})=> (
-              <div key={id} className='shadow rounded-[20px] p-[20px] text-[#000000]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, soluta fuga. Ullam doloremque, minus maiores, doloribus accusamus vitae esse harum tempore libero, corrupti expedita recusandae dolor molestiae in repellat fuga?</div>
+              <div key={id} className='shadow rounded-[20px] p-[20px] bg-white text-[#000000]'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, soluta fuga. Ullam doloremque, minus maiores, doloribus accusamus vitae esse harum tempore libero, corrupti expedita recusandae dolor molestiae in repellat fuga?</div>
             ))
           }
         </div>

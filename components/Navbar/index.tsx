@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Logo from "../../assets/logo.svg";
+import {AiOutlineMenu} from 'react-icons/ai'
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
@@ -13,9 +14,11 @@ function Navbar() {
           Mambila
         </p>
       </div>
-      <div className='lg:hidden cursor-pointer' onClick={()=> setIsMenuOpen(!isMenuOpen)}>menu</div>
+      <div className='lg:hidden cursor-pointer' onClick={()=> setIsMenuOpen(!isMenuOpen)}>
+        <AiOutlineMenu className='text-[35px] text-[#000000]'/>
       </div>
-      <div className={`${isMenuOpen? 'left-0' : 'left-[-100%] lg:left-0'} absolute top-0 lg:relative flex flex-col lg:flex-row items-start lg:items-center lg:space-x-[20px] space-y-[20px] lg:space-y-0 p-[20px_15px] bg-gray-300 lg:bg-transparent z-30 transition-all h-screen lg:h-fit w-[70%] md:w-[50%] lg:w-fit`}>
+      </div>
+      <div className={`${isMenuOpen? 'left-0' : 'left-[-100%] lg:left-0'} absolute top-0 lg:relative flex flex-col lg:flex-row items-start lg:items-center lg:space-x-[20px] space-y-[20px] lg:space-y-0 p-[20px_15px] bg-gray-300 lg:bg-transparent z-50 transition-all h-screen lg:h-fit w-[70%] md:w-[50%] lg:w-fit`}>
         {navLinks.map(({ name, link, id }) => (
           <div key={id}onClick={()=> setIsMenuOpen(!isMenuOpen)}>
             <Link

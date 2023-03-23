@@ -20,3 +20,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+
+.scroll::webkit-scrollbar {
+  display: none;
+}
+  

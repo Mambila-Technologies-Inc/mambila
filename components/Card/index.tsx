@@ -10,7 +10,7 @@ const Services: NextPage = () => {
       <div className='bg-[#D8D8D8] p-[20px] lg:p-[50px_40px] mt-[60px]'>
         <div className='flex flex-col lg:flex-row items-start lg:items-center justify-between'>
           <p className='font-[800] text-[22px] lg:text-[48px] text-[#000000] leading-[30px] lg:leading-[43px] font-Mulish'>The industries <br className='hidden lg:block' /> we service.</p>
-          <button>View all industriess</button>
+          <button className='bg-[#0500FC] text-white p-[8px_16px] font-[800] font-Mulish text-[16px] rounded-[8px]'>View all industriess</button>
         </div>
         <div className='grid lg:grid-cols-2 mt-[40px] gap-[40px]'>
           {

@@ -3,17 +3,20 @@ import Link from "next/link";
 import React from "react";
 import Logo from "../../assets/logo.svg";
 import {AiOutlineMenu} from 'react-icons/ai'
+import { useRouter } from "next/router";
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const router = useRouter();
+    // what should be used ${router.pathname === link ? "text-[#2D358F]" : ""}, but for now lets just make it work
   return (
     <div className="p-0 lg:p-[15px_30px] sticky top-0 flex flex-col lg:flex-row lg:items-center justify-start lg:justify-between w-full ">
       <div className='p-[15px] lg:p-0 flex items-center w-full lg:w-fit justify-between lg:justify-start'>
-      <div className="flex items-center  space-x-[5px]">
+      <Link href="/" className="flex items-center  space-x-[5px]">
         <Image alt="Mambila Logo" src={Logo} />
         <p className="font-Mulish text-[24px] font-[800]  text-[#000000]">
           Mambila
         </p>
-      </div>
+      </Link>
       <div className='lg:hidden cursor-pointer' onClick={()=> setIsMenuOpen(!isMenuOpen)}>
         <AiOutlineMenu className='text-[35px] text-[#000000]'/>
       </div>
@@ -23,7 +26,7 @@ function Navbar() {
           <div key={id}onClick={()=> setIsMenuOpen(!isMenuOpen)}>
             <Link
               href={link}
-              className="font-[700] text-[18px] font-Mulish text-[#000000]"
+              className={`font-[700] text-[18px] font-Mulish text-[#000000]`}
             >
               {name}
             </Link>
@@ -40,7 +43,7 @@ const navLinks = [
   {
     id: 1,
     name: "Products",
-    link: "/",
+    link: "/products",
   },
   {
     id: 2,

@@ -12,7 +12,7 @@ interface ISectorCardProps {
 export const SectorCard: FC<ISectorCardProps> = ({ title, content, image }) => {
   return (
     <div
-      className={`shadow rounded-3xl bg-white lmax-w-[540px] min-w-[250px] tablet:w-[45%] flex flex-col justify-between`}
+      className={`shadow rounded-3xl bg-white flex flex-col justify-between`}
     >
       <div className="p-5">
         <p className="text-black font-bold font-Mulish text-xl ipad:text-[28px]">

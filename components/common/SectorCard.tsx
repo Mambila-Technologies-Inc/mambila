@@ -7,11 +7,18 @@ interface ISectorCardProps {
   title: string;
   content: string;
   image: string;
+  handleClick?: () => void;
 }
 
-export const SectorCard: FC<ISectorCardProps> = ({ title, content, image }) => {
+export const SectorCard: FC<ISectorCardProps> = ({
+  title,
+  content,
+  image,
+  handleClick,
+}) => {
   return (
     <div
+      onClick={handleClick}
       className={`shadow rounded-3xl bg-white flex flex-col justify-between`}
     >
       <div className="p-5">
@@ -29,13 +36,13 @@ export const SectorCard: FC<ISectorCardProps> = ({ title, content, image }) => {
           <BsArrowRight />
         </Link>
       </div>
-        <Image
-          src={image}
-          alt="Sector image"
-          width={540}
-          height={218}
-          className="rounded-b-3xl object-cover w-full h-full"
-        />
+      <Image
+        src={image}
+        alt="Sector image"
+        width={540}
+        height={218}
+        className="rounded-b-3xl object-cover w-full h-full"
+      />
     </div>
   );
 };

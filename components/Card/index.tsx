@@ -5,6 +5,7 @@ import React from "react";
 // import { BsArrowRight } from "react-icons/bs";
 import { SectorArr } from "../Placeholders/SectorArr";
 import { SectorCard } from "../common/SectorCard";
+import { useRouter } from "next/router";
 
 const Services: NextPage = () => {
   const initialVisibleItems = 4;
@@ -16,6 +17,12 @@ const Services: NextPage = () => {
 
   const handleViewLess = () => {
     setVisibleItems(initialVisibleItems);
+  };
+
+  const router = useRouter();
+
+  const goToSector = (url: string) => {
+    router.push(url);
   };
 
   return (
@@ -45,6 +52,11 @@ const Services: NextPage = () => {
           {SectorArr.slice(0, visibleItems).map(
             ({ title, content, image }, index) => (
               <SectorCard
+                handleClick={
+                  title === "Blockchain"
+                    ? () => goToSector("/blockchain")
+                    : undefined
+                }
                 key={index}
                 title={title}
                 content={content}
